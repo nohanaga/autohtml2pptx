@@ -1,0 +1,51 @@
+:root {
+  --app-bg: #0b0f14;
+  --app-surface: rgba(255, 255, 255, 0.06);
+  --app-border: rgba(255, 255, 255, 0.12);
+  --app-text: rgba(255, 255, 255, 0.92);
+  --app-muted: rgba(255, 255, 255, 0.65);
+  --app-accent: #6ea8fe;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--app-bg);
+  color: var(--app-text);
+}
+
+.app-shell {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.pane {
+  min-height: 0;
+}
+
+.app-surface {
+  background: var(--app-surface) !important;
+}
+
+.app-border {
+  border-color: var(--app-border) !important;
+}
+
+.app-muted {
+  color: var(--app-muted) !important;
+}
+
+.app-accent {
+  color: var(--app-accent) !important;
+}
